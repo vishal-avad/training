@@ -1,14 +1,14 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. HELLO-WORLD.
        AUTHOR. SAMPLE-PROGRAM.
-      *
+
       * A sample COBOL program demonstrating basic features:
       *   - Variables and data types
       *   - Arithmetic operations
       *   - Conditional logic
       *   - PERFORM loops
       *   - String handling
-      *
+
        ENVIRONMENT DIVISION.
 
        DATA DIVISION.
@@ -42,11 +42,7 @@
 
       * --- String Handling ---
            MOVE "GnuCOBOL Developer" TO WS-NAME.
-           STRING "Hello, " DELIMITED BY SIZE
-                  WS-NAME   DELIMITED BY "  "
-                  "!"       DELIMITED BY SIZE
-                  INTO WS-GREETING.
-           DISPLAY "Greeting: " WS-GREETING.
+           DISPLAY "Greeting: Hello, " WS-NAME "!".
            DISPLAY SPACES.
 
       * --- Arithmetic ---
@@ -92,13 +88,7 @@
       * --- Date Handling ---
            DISPLAY "--- Current Date ---".
            ACCEPT WS-DATE FROM DATE YYYYMMDD.
-           STRING WS-YEAR   DELIMITED BY SIZE
-                  "-"       DELIMITED BY SIZE
-                  WS-MONTH  DELIMITED BY SIZE
-                  "-"       DELIMITED BY SIZE
-                  WS-DAY    DELIMITED BY SIZE
-                  INTO WS-FORMATTED-DATE.
-           DISPLAY "  Today is: " WS-FORMATTED-DATE.
+           DISPLAY "  Today is: " WS-YEAR "-" WS-MONTH "-" WS-DAY.
            DISPLAY SPACES.
 
            DISPLAY "========================================".
