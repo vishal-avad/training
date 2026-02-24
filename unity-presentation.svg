@@ -1,0 +1,335 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <style>
+      .bg { fill: #0a0e27; }
+      .text-title { fill: #ffffff; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 56px; font-weight: 700; letter-spacing: -0.5px; }
+      .text-section { fill: #ffffff; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 36px; font-weight: 600; }
+      .text-label { fill: #e8edf4; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 22px; font-weight: 500; }
+      .text-sublabel { fill: #9ba8bc; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; font-weight: 400; }
+      .text-body { fill: #c5d1e0; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 19px; font-weight: 400; }
+      .text-small { fill: #8a9bb5; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 17px; font-weight: 400; }
+      
+      .box-legacy { fill: #1e1a2e; stroke: #ff4757; stroke-width: 2.5; }
+      .box-unity1 { fill: #1a2838; stroke: #00d9ff; stroke-width: 3; }
+      .box-unity2 { fill: #1a2e24; stroke: #51cf66; stroke-width: 3; }
+      .box-source { fill: #1e2a1e; stroke: #5fb878; stroke-width: 2; }
+      .box-consumer { fill: #2a2419; stroke: #ffa94d; stroke-width: 2; }
+      
+      .arrow-main { fill: none; stroke: #00d9ff; stroke-width: 3; stroke-linecap: round; }
+      .arrow-flow { fill: none; stroke: #00d9ff; stroke-width: 2.5; stroke-linecap: round; }
+      .arrow-marker { fill: #00d9ff; }
+      
+      .icon-db { fill: #ff4757; }
+      .icon-kafka { fill: #00d9ff; }
+      .icon-unity { fill: #00d9ff; }
+      .problem-bg { fill: #2d1b1b; stroke: #ff4757; stroke-width: 2; stroke-dasharray: 8,4; }
+      .solution-bg { fill: #1b2d1b; stroke: #51cf66; stroke-width: 2; }
+      .success-card { fill: #162838; stroke: #00d9ff; stroke-width: 2.5; }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto" class="arrow-marker">
+      <path d="M 2 2 L 11 6 L 2 10 z" />
+    </marker>
+    
+    <linearGradient id="grad-legacy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4757;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#ff4757;stop-opacity:0.05" />
+    </linearGradient>
+    
+    <linearGradient id="grad-unity1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#00d9ff;stop-opacity:0.05" />
+    </linearGradient>
+    
+    <linearGradient id="grad-unity2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#51cf66;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#51cf66;stop-opacity:0.05" />
+    </linearGradient>
+  </defs>
+  
+  <rect class="bg" width="1920" height="1080"/>
+  
+  <text class="text-title" x="960" y="75" text-anchor="middle">Unity Evolution: From Complexity to Simplicity</text>
+  
+  <!-- SECTION 1: LEGACY CHALLENGE -->
+  <g id="legacy-section">
+    <rect x="60" y="125" width="860" height="330" rx="12" fill="url(#grad-legacy)" opacity="0.3"/>
+    
+    <text class="text-section" x="80" y="165" fill="#ff4757">The Legacy Challenge</text>
+    
+    <g id="ghss-instances" transform="translate(0, 10)">
+      <g id="instance-1">
+        <rect class="box-legacy" x="80" y="195" width="180" height="90" rx="8"/>
+        <circle class="icon-db" cx="170" cy="225" r="18">
+          <animate attributeName="opacity" values="1;0.6;1" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <path d="M 160 220 Q 170 215 180 220 L 180 230 Q 170 235 160 230 Z" fill="#ff4757"/>
+        <ellipse cx="170" cy="220" rx="10" ry="4" fill="#ff8a94"/>
+        <text class="text-label" x="170" y="263" text-anchor="middle">GHSS HK</text>
+        <text class="text-sublabel" x="170" y="279" text-anchor="middle">Instance</text>
+      </g>
+      
+      <g id="instance-2">
+        <rect class="box-legacy" x="280" y="195" width="180" height="90" rx="8"/>
+        <circle class="icon-db" cx="370" cy="225" r="18">
+          <animate attributeName="opacity" values="1;0.6;1" dur="3s" begin="0.3s" repeatCount="indefinite"/>
+        </circle>
+        <path d="M 360 220 Q 370 215 380 220 L 380 230 Q 370 235 360 230 Z" fill="#ff4757"/>
+        <ellipse cx="370" cy="220" rx="10" ry="4" fill="#ff8a94"/>
+        <text class="text-label" x="370" y="263" text-anchor="middle">GHSS KR</text>
+        <text class="text-sublabel" x="370" y="279" text-anchor="middle">Instance</text>
+      </g>
+      
+      <g id="instance-3">
+        <rect class="box-legacy" x="480" y="195" width="180" height="90" rx="8"/>
+        <circle class="icon-db" cx="570" cy="225" r="18">
+          <animate attributeName="opacity" values="1;0.6;1" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+        </circle>
+        <path d="M 560 220 Q 570 215 580 220 L 580 230 Q 570 235 560 230 Z" fill="#ff4757"/>
+        <ellipse cx="570" cy="220" rx="10" ry="4" fill="#ff8a94"/>
+        <text class="text-label" x="570" y="263" text-anchor="middle">GHSS SA</text>
+        <text class="text-sublabel" x="570" y="279" text-anchor="middle">Instance</text>
+      </g>
+      
+      <g id="instance-4">
+        <rect class="box-legacy" x="680" y="195" width="180" height="90" rx="8"/>
+        <circle class="icon-db" cx="770" cy="225" r="18">
+          <animate attributeName="opacity" values="1;0.6;1" dur="3s" begin="0.9s" repeatCount="indefinite"/>
+        </circle>
+        <path d="M 760 220 Q 770 215 780 220 L 780 230 Q 770 235 760 230 Z" fill="#ff4757"/>
+        <ellipse cx="770" cy="220" rx="10" ry="4" fill="#ff8a94"/>
+        <text class="text-label" x="770" y="263" text-anchor="middle">GCS UK</text>
+        <text class="text-sublabel" x="770" y="279" text-anchor="middle">Instance</text>
+      </g>
+      
+      <text class="text-small" x="480" y="315" text-anchor="middle" fill="#ff6b7a" font-style="italic">...and 20+ more instances across markets</text>
+    </g>
+    
+    <rect class="problem-bg" x="80" y="345" width="780" height="90" rx="10"/>
+    <text class="text-label" x="470" y="375" text-anchor="middle" fill="#ff4757" font-size="24">⚠ THE PROBLEM</text>
+    <text class="text-body" x="470" y="403" text-anchor="middle" fill="#c5d1e0">Each consumer needs separate connections to every market instance</text>
+    <text class="text-small" x="470" y="425" text-anchor="middle" fill="#9ba8bc">Complex integration • High maintenance • Scalability issues</text>
+  </g>
+  
+  <!-- SECTION 2: UNITY V1 -->
+  <g id="unity1-section">
+    <rect x="60" y="485" width="860" height="280" rx="12" fill="url(#grad-unity1)" opacity="0.3"/>
+    
+    <text class="text-section" x="80" y="525" fill="#00d9ff">Unity v1: Centralized Solution</text>
+    
+    <g id="flow-diagram" transform="translate(0, 10)">
+      <g id="ghss-source">
+        <rect class="box-legacy" x="100" y="555" width="140" height="85" rx="8"/>
+        <circle class="icon-db" cx="170" cy="585" r="16"/>
+        <path d="M 162 581 Q 170 577 178 581 L 178 589 Q 170 593 162 589 Z" fill="#ff4757"/>
+        <ellipse cx="170" cy="581" rx="8" ry="3" fill="#ff8a94"/>
+        <text class="text-label" x="170" y="617" text-anchor="middle" font-size="20">GHSS</text>
+        <text class="text-sublabel" x="170" y="633" text-anchor="middle">All Markets</text>
+      </g>
+      
+      <path class="arrow-flow" d="M 250 597 L 335 597" marker-end="url(#arrowhead)"/>
+      <text class="text-small" x="293" y="590" text-anchor="middle" fill="#00d9ff" font-weight="500">IBM CDC</text>
+      
+      <g id="kafka-hub">
+        <rect class="box-unity1" x="345" y="565" width="130" height="65" rx="8"/>
+        <circle cx="410" cy="597" r="22" fill="#00d9ff" opacity="0.2"/>
+        <circle cx="410" cy="597" r="16" fill="#00d9ff" opacity="0.3"/>
+        <circle cx="410" cy="597" r="10" fill="#00d9ff"/>
+        <circle cx="405" cy="592" r="2" fill="#0a0e27"/>
+        <circle cx="415" cy="592" r="2" fill="#0a0e27"/>
+        <circle cx="405" cy="602" r="2" fill="#0a0e27"/>
+        <circle cx="415" cy="602" r="2" fill="#0a0e27"/>
+        <text class="text-label" x="410" y="648" text-anchor="middle" font-size="19">Kafka</text>
+      </g>
+      
+      <path class="arrow-flow" d="M 485 597 L 570 597" marker-end="url(#arrowhead)"/>
+      
+      <g id="unity1-core">
+        <rect class="box-unity1" x="580" y="555" width="160" height="85" rx="8"/>
+        <rect x="640" y="575" width="40" height="40" rx="6" fill="#00d9ff" opacity="0.9"/>
+        <path d="M 650 590 L 670 590 M 660 580 L 660 600" stroke="#0a0e27" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="655" cy="585" r="3" fill="#0a0e27"/>
+        <circle cx="665" cy="585" r="3" fill="#0a0e27"/>
+        <circle cx="655" cy="595" r="3" fill="#0a0e27"/>
+        <circle cx="665" cy="595" r="3" fill="#0a0e27"/>
+        <text class="text-label" x="660" y="635" text-anchor="middle" font-size="22" font-weight="600">Unity v1</text>
+      </g>
+      
+      <path class="arrow-flow" d="M 750 597 L 835 597" marker-end="url(#arrowhead)"/>
+      
+      <g id="consumers-group">
+        <rect class="box-consumer" x="845" y="565" width="130" height="65" rx="8"/>
+        <circle cx="895" cy="590" r="12" fill="#ffa94d" opacity="0.8"/>
+        <circle cx="915" cy="590" r="12" fill="#ffa94d" opacity="0.8"/>
+        <circle cx="885" cy="605" r="11" fill="#ffa94d" opacity="0.8"/>
+        <circle cx="905" cy="605" r="11" fill="#ffa94d" opacity="0.8"/>
+        <circle cx="925" cy="605" r="11" fill="#ffa94d" opacity="0.8"/>
+        <text class="text-label" x="910" y="638" text-anchor="middle" font-size="19">Consumers</text>
+      </g>
+    </g>
+    
+    <rect class="solution-bg" x="100" y="665" width="775" height="80" rx="10"/>
+    <text class="text-label" x="488" y="693" text-anchor="middle" fill="#51cf66" font-size="22">✓ Single Connection Point</text>
+    <text class="text-small" x="488" y="715" text-anchor="middle" fill="#51cf66">Unified access • Simplified architecture</text>
+    <text class="text-small" x="488" y="735" text-anchor="middle" fill="#ff8a94">✗ Code-intensive • Slow market onboarding • Limited flexibility</text>
+  </g>
+  
+  <!-- EVOLUTION ARROW -->
+  <g id="evolution-arrow">
+    <defs>
+      <marker id="big-arrow" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto">
+        <path d="M 2 4 L 18 10 L 2 16 z" fill="#00d9ff"/>
+      </marker>
+    </defs>
+    <path class="arrow-main" d="M 200 805 L 850 805" marker-end="url(#big-arrow)" stroke-width="4"/>
+    <text class="text-label" x="525" y="797" text-anchor="middle" fill="#00d9ff" font-size="24">Evolution Timeline</text>
+  </g>
+  
+  <!-- SECTION 3: UNITY V2 -->
+  <g id="unity2-section">
+    <rect x="1000" y="125" width="860" height="880" rx="12" fill="url(#grad-unity2)" opacity="0.2"/>
+    
+    <text class="text-section" x="1430" y="175" text-anchor="middle" fill="#51cf66" font-size="40">Unity v2: The Game Changer</text>
+    
+    <g id="unity2-architecture">
+      <g id="source-adaptors" transform="translate(0, 0)">
+        <text class="text-label" x="1110" y="235" fill="#b8c5d6" font-size="24">Multiple Sources</text>
+        
+        <rect class="box-source" x="1050" y="255" width="120" height="65" rx="6"/>
+        <circle cx="1090" cy="280" r="12" fill="#5fb878" opacity="0.3"/>
+        <text class="text-label" x="1110" y="291" font-size="19">GHSS</text>
+        <text class="text-sublabel" x="1110" y="309">via CDC</text>
+        
+        <rect class="box-source" x="1050" y="335" width="120" height="65" rx="6"/>
+        <path d="M 1080 360 L 1100 360 M 1090 350 L 1090 370" stroke="#5fb878" stroke-width="2"/>
+        <text class="text-label" x="1110" y="375" font-size="19">REST</text>
+        <text class="text-sublabel" x="1110" y="393">APIs</text>
+        
+        <rect class="box-source" x="1050" y="415" width="120" height="65" rx="6"/>
+        <rect x="1080" y="440" width="20" height="15" fill="#5fb878" opacity="0.5" rx="2"/>
+        <text class="text-label" x="1110" y="456" font-size="19">MQ</text>
+        <text class="text-sublabel" x="1110" y="474">Messaging</text>
+        
+        <rect class="box-source" x="1050" y="495" width="120" height="65" rx="6"/>
+        <path d="M 1080 520 L 1100 520 M 1085 525 L 1095 525" stroke="#5fb878" stroke-width="2"/>
+        <text class="text-label" x="1110" y="536" font-size="19">sFTP</text>
+        <text class="text-sublabel" x="1110" y="554">File Transfer</text>
+      </g>
+      
+      <path class="arrow-flow" d="M 1180 287 L 1290 390" marker-end="url(#arrowhead)"/>
+      <path class="arrow-flow" d="M 1180 367 L 1290 390" marker-end="url(#arrowhead)"/>
+      <path class="arrow-flow" d="M 1180 447 L 1290 415" marker-end="url(#arrowhead)"/>
+      <path class="arrow-flow" d="M 1180 527 L 1290 440" marker-end="url(#arrowhead)"/>
+      
+      <g id="unity2-core-engine">
+        <rect class="box-unity2" x="1300" y="315" width="260" height="170" rx="12"/>
+        
+        <rect x="1320" y="270" width="80" height="38" rx="6" fill="#4c6ef5"/>
+        <path d="M 1340 286 L 1350 296 L 1345 301" fill="none" stroke="#fff" stroke-width="2"/>
+        <rect x="1346" y="290" width="8" height="8" fill="#fff" rx="1"/>
+        <text x="1360" y="295" font-size="18" fill="#fff" font-weight="600">UI</text>
+        
+        <rect x="1410" y="270" width="140" height="38" rx="6" fill="#4c6ef5"/>
+        <text x="1480" y="295" text-anchor="middle" font-size="17" fill="#fff" font-weight="600">Easy Pipeline</text>
+        
+        <rect x="1350" y="340" width="160" height="120" rx="10" fill="#51cf66" opacity="0.15" stroke="#51cf66" stroke-width="2"/>
+        <circle cx="1430" cy="400" r="45" fill="#51cf66" opacity="0.2"/>
+        
+        <rect x="1405" y="375" width="50" height="50" rx="8" fill="#51cf66"/>
+        <path d="M 1420 395 L 1440 395 M 1430 385 L 1430 405" stroke="#0a0e27" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="1423" cy="388" r="4" fill="#0a0e27"/>
+        <circle cx="1437" cy="388" r="4" fill="#0a0e27"/>
+        <circle cx="1423" cy="402" r="4" fill="#0a0e27"/>
+        <circle cx="1437" cy="402" r="4" fill="#0a0e27"/>
+        
+        <text class="text-section" x="1430" y="450" text-anchor="middle" fill="#51cf66" font-size="32">Unity v2</text>
+        
+        <text class="text-small" x="1430" y="505" text-anchor="middle" fill="#7ecc99" font-size="15">Transformation Engine</text>
+      </g>
+      
+      <path class="arrow-flow" d="M 1570 360 L 1680 287" marker-end="url(#arrowhead)"/>
+      <path class="arrow-flow" d="M 1570 390 L 1680 367" marker-end="url(#arrowhead)"/>
+      <path class="arrow-flow" d="M 1570 430 L 1680 447" marker-end="url(#arrowhead)"/>
+      <path class="arrow-flow" d="M 1570 460 L 1680 527" marker-end="url(#arrowhead)"/>
+      
+      <g id="consumer-adaptors">
+        <text class="text-label" x="1760" y="235" fill="#b8c5d6" font-size="24">Multiple Consumers</text>
+        
+        <rect class="box-consumer" x="1690" y="255" width="140" height="65" rx="6"/>
+        <path d="M 1740 280 L 1760 280 M 1750 270 L 1750 290" stroke="#ffa94d" stroke-width="2"/>
+        <text class="text-label" x="1760" y="291" font-size="19">REST API</text>
+        <text class="text-sublabel" x="1760" y="309">Endpoints</text>
+        
+        <rect class="box-consumer" x="1690" y="335" width="140" height="65" rx="6"/>
+        <circle cx="1745" cy="360" r="10" fill="#ffa94d" opacity="0.4"/>
+        <text class="text-label" x="1760" y="375" font-size="19">BigQuery</text>
+        <text class="text-sublabel" x="1760" y="393">Analytics</text>
+        
+        <rect class="box-consumer" x="1690" y="415" width="140" height="65" rx="6"/>
+        <rect x="1735" y="440" width="20" height="15" fill="#ffa94d" opacity="0.5" rx="2"/>
+        <text class="text-label" x="1760" y="456" font-size="19">MQ</text>
+        <text class="text-sublabel" x="1760" y="474">Messaging</text>
+        
+        <rect class="box-consumer" x="1690" y="495" width="140" height="65" rx="6"/>
+        <path d="M 1735 520 L 1755 520 M 1740 525 L 1750 525" stroke="#ffa94d" stroke-width="2"/>
+        <text class="text-label" x="1760" y="536" font-size="19">sFTP</text>
+        <text class="text-sublabel" x="1760" y="554">File Export</text>
+      </g>
+      
+      <g id="cloud-deployment">
+        <text class="text-body" x="1430" y="545" text-anchor="middle" fill="#00d9ff" font-size="20" font-weight="500">Single-Click Deployment</text>
+        
+        <rect x="1315" y="555" width="90" height="35" rx="6" fill="#1e3a5f" stroke="#00d9ff" stroke-width="1.5"/>
+        <text class="text-label" x="1360" y="578" text-anchor="middle" fill="#00d9ff" font-size="18">GCP</text>
+        
+        <rect x="1415" y="555" width="90" height="35" rx="6" fill="#1e3a5f" stroke="#00d9ff" stroke-width="1.5"/>
+        <text class="text-label" x="1460" y="578" text-anchor="middle" fill="#00d9ff" font-size="18">KOPS</text>
+        
+        <rect x="1515" y="555" width="105" height="35" rx="6" fill="#1e3a5f" stroke="#00d9ff" stroke-width="1.5"/>
+        <text class="text-label" x="1567" y="578" text-anchor="middle" fill="#00d9ff" font-size="18">Ali-cloud</text>
+      </g>
+    </g>
+    
+    <rect class="solution-bg" x="1030" y="620" width="800" height="75" rx="10"/>
+    <text class="text-label" x="1430" y="648" text-anchor="middle" fill="#51cf66" font-size="20">✓ UI-Driven Configuration • Flexible Transformations • Rapid Deployment</text>
+    <text class="text-body" x="1430" y="675" text-anchor="middle" fill="#7ecc99" font-size="18">From weeks to hours for new market onboarding</text>
+    
+    <g id="success-metrics">
+      <rect class="success-card" x="1070" y="725" width="720" height="250" rx="12"/>
+      
+      <text class="text-section" x="1430" y="770" text-anchor="middle" fill="#00d9ff" font-size="34">Success Story</text>
+      
+      <g id="metric-grid">
+        <g id="m1">
+          <circle cx="1150" cy="830" r="30" fill="#51cf66" opacity="0.25"/>
+          <text x="1150" y="842" text-anchor="middle" font-size="32" fill="#51cf66">⚡</text>
+          <text class="text-label" x="1210" y="837" font-size="20" fill="#e8edf4">Fast Onboarding</text>
+          <text class="text-small" x="1210" y="857" fill="#9ba8bc">Hours vs. weeks</text>
+        </g>
+        
+        <g id="m2">
+          <circle cx="1550" cy="830" r="30" fill="#4ecdc4" opacity="0.25"/>
+          <text x="1550" y="842" text-anchor="middle" font-size="32" fill="#4ecdc4">🎯</text>
+          <text class="text-label" x="1610" y="837" font-size="20" fill="#e8edf4">Easy Setup</text>
+          <text class="text-small" x="1610" y="857" fill="#9ba8bc">No-code pipelines</text>
+        </g>
+        
+        <g id="m3">
+          <circle cx="1150" cy="920" r="30" fill="#ffa94d" opacity="0.25"/>
+          <text x="1150" y="932" text-anchor="middle" font-size="32" fill="#ffa94d">🔌</text>
+          <text class="text-label" x="1210" y="927" font-size="20" fill="#e8edf4">Multiple Adaptors</text>
+          <text class="text-small" x="1210" y="947" fill="#9ba8bc">Extensible architecture</text>
+        </g>
+        
+        <g id="m4">
+          <circle cx="1550" cy="920" r="30" fill="#ff6b9d" opacity="0.25"/>
+          <text x="1550" y="932" text-anchor="middle" font-size="32" fill="#ff6b9d">📈</text>
+          <text class="text-label" x="1610" y="927" font-size="20" fill="#e8edf4">Growing Adoption</text>
+          <text class="text-small" x="1610" y="947" fill="#9ba8bc">Proven success</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <line x1="980" y1="145" x2="980" y2="995" stroke="#00d9ff" stroke-width="3" opacity="0.3" stroke-dasharray="10,10"/>
+</svg>
